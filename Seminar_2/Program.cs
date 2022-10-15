@@ -43,8 +43,25 @@ void number(int N, int count){
     if (count<3) Console.WriteLine($"Третьей цифры нет");
     else 
     {
-        
+        string N_str = Convert.ToString(N);
+        Console.WriteLine($"Третья цифра -> {N_str[2]}");
     }
 }
 number(N, count);
 */
+
+// 3 способ
+Console.Write("Введите число: ");
+int N = int.Parse(Console.ReadLine());
+Console.WriteLine(N);
+void number(int N)
+{
+int count = N.ToString().Length;//мы всегда можем узнать длину у числа таким способом
+    if (count<3) Console.WriteLine($"Третьей цифры нет");
+    else
+    {
+        string N_str = Convert.ToString(N);
+        Console.WriteLine($"Третья цифра -> {N_str[2]}");
+    }
+}
+number(N);//только N
