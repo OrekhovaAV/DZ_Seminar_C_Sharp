@@ -59,3 +59,4 @@ if (k1==k2)
 else
     Console.WriteLine($"Точка пересечения: {x};{y}");
 */
+
