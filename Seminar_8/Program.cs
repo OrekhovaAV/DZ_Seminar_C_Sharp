@@ -123,6 +123,7 @@ void SecondOutput(int[,] arr){
 }
 
 void resultMas(int[,] FirstMas, int[,] SecondMas, int[,] thirdMas){
+    int[,] thirdMas = new int[2,2]
     for (int i = 0; i < thirdMas.GetLength(0); i++){
         for (int j = 0; j < thirdMas.GetLength(1); j++){
             thirdMas[i,j]=0;
@@ -144,8 +145,7 @@ SecondMas(array);
 SecondOutput(array);
 
 Console.WriteLine("Результат произведения матриц");
-int[,] thirdMas = new int[2,2];
-thirdMas = resultMas(FirstMas, SecondMas, array);
+resultMas(FirstMas, SecondMas, thirdMas);
 
 
 // Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, 
